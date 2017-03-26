@@ -1,4 +1,3 @@
-// Server code - (c) <current year> Express team.
 var express = require('express')
 var path = require('path')
 var serveStatic = require('serve-static')
@@ -13,7 +12,7 @@ app.use (function (req, res, next) {
                 next();
         } else {
                 // request was via http, so redirect to https
-                res.redirect('https://' + req.headers.host + req.url);
+                res.redirect(`https://${req.headers.host}${req.url}`);
         }
 });
 
