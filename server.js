@@ -4,7 +4,8 @@ var serveStatic = require('serve-static')
  
 var app = express()
 
-// HTTPS redir code - (c) 2014 IBM Corp. 
+// HTTPS redir code - originally (c) 2014 IBM Corp. 
+// Modified redir code - (c) 2017 motiontheking
 app.enable('trust proxy');
 app.use (function (req, res, next) {
         if (req.secure) {
