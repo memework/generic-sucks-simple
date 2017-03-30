@@ -6,7 +6,7 @@
     "description": "no",
     "license": "MIT",
     "engines": {
-        "node": ">=0.10"
+        "node": ">=6.9.5"
     },
     "dependencies": {
         "express": "~4.15.2",
